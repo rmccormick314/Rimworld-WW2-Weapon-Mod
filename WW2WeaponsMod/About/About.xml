@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>World War 2 Weapons</name>
+    <author>Chardsy</author>
+    <packageId>Chardsy.WW2.Weapons</packageId>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+
+    <description>Weapons from World War 2.
+        
+Pistols:
+- C96
+
+Rifles:
+
+Submachine Guns:
+
+Light Machine Guns:
+
+Grenades:
+
+    </description>
+</ModMetaData>
