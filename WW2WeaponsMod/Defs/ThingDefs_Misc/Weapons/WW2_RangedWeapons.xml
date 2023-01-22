@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!--               PISTOLS                 -->
-  <!-- Mauser C96 -->
+  <!-- ==================== PISTOLS ========================== -->
+  <!-- === Mauser C96 === -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_CNineSix</defName>
     <label>c96 bullet</label>
@@ -48,6 +48,7 @@
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <recipeMaker>
+	  <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
@@ -86,11 +87,15 @@
     </tools>
   </ThingDef>
   
-  <!--               LMGS                 -->
-  <!-- MG-42 -->
+  <!-- ==================== RIFLES ========================== -->
+
+  <!-- ==================== SMGS ========================== -->
+  
+  <!-- ==================== LMGS ========================== -->
+  <!-- === MG-42 === -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_MGFourTwo</defName>
-    <label>MG 42 bullet</label>
+    <label>MG42 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -104,10 +109,10 @@
   </ThingDef>
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_MGFourTwo</defName>
-    <label>MG-42</label>
+    <label>MG42</label>
     <description>A German recoil-operated air-cooled general-purpose light machine gun. It is most notable for its very high cyclic rate, making it extremely effective in providing suppressive fire, although it is inaccurate at longer ranges.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/LMG</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/MG42</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -172,5 +177,5 @@
       </li>
     </tools>
   </ThingDef>
-
+  
 </Defs>
