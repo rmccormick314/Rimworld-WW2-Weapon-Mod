@@ -88,9 +88,173 @@
   </ThingDef>
   
   <!-- ==================== RIFLES ========================== -->
+  <!-- === M1 Garand === -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Garand</defName>
+    <label>M1 Garand Bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <stoppingPower>1.2</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_Garand</defName>
+    <label>M1 Garand</label>
+    <description>A semi-automatic rifle that was the service rifle of the U.S Army during World War II. Called, "the greatest battle implement ever devised".</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.62</AccuracyTouch>
+      <AccuracyShort>0.77</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.77</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>415</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Garand</defaultProjectile>
+        <warmupTime>1.4</warmupTime>
+        <range>32</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 
   <!-- ==================== SMGS ========================== -->
-  
+  <!-- === PPSh-41 === -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_PPSh</defName>
+    <label>PPSh Bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>48</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_PPSh</defName>
+    <label>PPSh-41</label>
+    <description>A compact, wide-caliber slug-thrower. It's got a very short range, but it packs a punch and handles quite well.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/HeavySMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>440</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>24000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.32</AccuracyMedium>
+      <AccuracyLong>0.16</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PPSh</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>20</range>
+        <burstShotCount>7</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>ShortShots</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
   <!-- ==================== LMGS ========================== -->
   <!-- === MG-42 === -->
   <ThingDef ParentName="BaseBullet">
