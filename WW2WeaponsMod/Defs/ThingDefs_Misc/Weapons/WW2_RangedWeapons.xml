@@ -185,7 +185,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_PPSh</defName>
     <label>PPSh-41</label>
-    <description>A compact, wide-caliber slug-thrower. It's got a very short range, but it packs a punch and handles quite well.</description>
+    <description>A Soviet submachine gun known for its high rate of fire and poor accuracy.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/HeavySMG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
