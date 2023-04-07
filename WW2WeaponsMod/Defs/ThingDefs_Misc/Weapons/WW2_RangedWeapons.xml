@@ -87,7 +87,7 @@
     </tools>
   </ThingDef>
   
-  <!-- ==================== RIFLES ========================== -->
+  <!-- ===================== RIFLES ========================== -->
   <!-- === M1 Garand === -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_Garand</defName>
@@ -167,7 +167,7 @@
     </tools>
   </ThingDef>
 
-  <!-- ==================== SMGS ========================== -->
+  <!-- ====================== SMGS =========================== -->
   <!-- === PPSh-41 === -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_PPSh</defName>
@@ -255,7 +255,7 @@
     </tools>
   </ThingDef>
 
-  <!-- ==================== LMGS ========================== -->
+  <!-- ====================== LMGS =========================== -->
   <!-- === MG-42 === -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_MGFourTwo</defName>
